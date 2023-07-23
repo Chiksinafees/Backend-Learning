@@ -1,0 +1,24 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "learning node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon App.js",
+    "start-server": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chiksinafees/Backend-Learning.git"
+  },
+  "author": "Nafees ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chiksinafees/Backend-Learning/issues"
+  },
+  "homepage": "https://github.com/Chiksinafees/Backend-Learning#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
