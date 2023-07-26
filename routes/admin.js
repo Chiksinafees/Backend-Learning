@@ -6,7 +6,11 @@ const router = express.Router();
 router.get("/add-product", (req, res, next) => {
   console.log("1st middleware");
   res.send(
-    '<form action="/admin/add-product" method="POST"><input type="text" name="title"></input><input type="number" name="size"><button type="submit">Add Product</button></input></form>'
+    `<form action="/admin/add-product" method="POST">
+       <input type="text" name="title">
+       </input><input type="number" name="size">
+       <button type="submit">Add Product</button>
+     </form>`
   );
 });
 
