@@ -8,7 +8,7 @@ const shopRoutes = require("./routes/shop");
 app.use(bodyParser.urlencoded());
 
 app.use("/admin", adminRoutes);
-app.use("/admin", shopRoutes);
+app.use(shopRoutes);
 
 app.use((req, res) => {
   res.status(404).send("<h1>Page not found !</h1>");
