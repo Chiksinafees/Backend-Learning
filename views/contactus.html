@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="styleSheet" href="/css/main.css" />
+    <link rel="styleSheet" href="/css/product.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/shop">shop</a></li>
+          <li><a href="/admin/add-product">Add product</a></li>
+          <li><a href="/contactus" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="/contactus" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <button type="submit">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
