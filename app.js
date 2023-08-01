@@ -8,6 +8,8 @@ const shopRoutes = require("./routes/shop");
 const loginRoutes = require("./routes/login");
 const messageRoutes = require("./routes/message");
 const contactusRoutes = require("./routes/contactus");
+const successController = require("./controllers/success");
+const error404Controller = require("./controllers/error404");
 
 app.use(bodyParser.urlencoded());
 app.use(express.static(path.join(__dirname, "public")));
@@ -17,12 +19,7 @@ app.use(loginRoutes);
 app.use(messageRoutes);
 app.use(contactusRoutes);
 
-app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "views", "success.html"));
-});
+app.use(successController.successPage);
+app.use(error404Controller.error404Page);
 
-app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
-});
-
-app.listen(3000);
+app.listen(3001);
